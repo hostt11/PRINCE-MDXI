@@ -2,22 +2,17 @@
     "bot-name": "PRINCE-MDX",
     "description": "PRINCE-MDX is a powerful and user-friendly WhatsApp multi-device bot built with Baileys. 🤖",
     "logo": "https://raw.githubusercontent.com/Mayelprince/url/refs/heads/main/menun.jpg",
-    "keywords": ["bot","nodejs"],
+    "keywords": ["bot","nodejs","user bot"],
     "documentation-link": "https://sessionn.princetechn.com",
-    "success_url": "/",
-  "env": {
-    "SESSION_ID": {
-      "description": "Put the session-id here.",
-      "required": true
+  
+    "env": {
+      "SESSION_ID": {
+        "description": "Put your SESSION_ID here. Make sure it starts with KERM-MD-V1~, or get session id from here, https://pair-session-kermv4-pair.onrender.com",
+        "value":"",
+        "required": true
+        
+        
+      }
     }
-  },
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    }
-  ],
-  "stack": "heroku-24"
-}
+  
+  }
